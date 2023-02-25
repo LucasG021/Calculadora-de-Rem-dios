@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" /> -->
+  <title>App caixa</title>
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <!-- <div class="container mt-5 vh-100">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <h1 class="text-center mb-5">Calculadora de Caixas de Remédio</h1>
+        <form>
+          <div class="form-group mb-4">
+            <label for="comprimidosPorDia">Comprimidos por dia:</label>
+            <input type="number" id="comprimidosPorDia" class="form-control" min="1" value="1">
+          </div>
+          <div class="form-group mb-4">
+            <label for="duracaoTratamento">Duração do tratamento (meses):</label>
+            <input type="number" id="duracaoTratamento" class="form-control" min="1" value="1">
+          </div>
+          <div class="form-group mb-4">
+            <label>Tamanho das caixas:</label><br>
+            <div class="form-check form-check-inline">
+              <input type="checkbox" id="caixa1" class="form-check-input" value="1">
+              <label for="caixa1" class="form-check-label">1 comprimido</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input type="checkbox" id="caixa30" class="form-check-input" value="30">
+              <label for="caixa30" class="form-check-label">30 comprimidos</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input type="checkbox" id="caixa60" class="form-check-input" value="60">
+              <label for="caixa60" class="form-check-label">60 comprimidos</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input type="checkbox" id="caixa120" class="form-check-input" value="120">
+              <label for="caixa120" class="form-check-label">120 comprimidos</label>
+            </div>
+          </div>
+          <div class="form-group text-center">
+            <button type="button" class="btn btn-primary" id="calcular">Calcular</button>
+          </div>
+          <div class="form-group">
+            <div id="resultado-bg ">
+              <br>
+              <p id="resultado"></p>
+              <br>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div> -->
+  <section class="vh-100" style="background-color: #508bfc;">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card shadow-2-strong" style="border-radius: 1rem;">
+            <div class="card-body p-5 text-center">
+
+              <h1 class="text-center mb-5">Calculadora de Caixas de Remédio</h1>
+              <form>
+                <div class="form-group mb-4">
+                  <label for="comprimidosPorDia">Comprimidos por dia:</label>
+                  <input type="number" id="comprimidosPorDia" class="form-control" min="1" value="1">
+                </div>
+                <div class="form-group mb-4">
+                  <label for="duracaoTratamento">Duração do tratamento (meses):</label>
+                  <input type="number" id="duracaoTratamento" class="form-control" min="1" value="1">
+                </div>
+                <div class="form-group mb-4">
+                  <label>Tamanho das caixas:</label><br>
+                  <div class="form-check form-check-inline">
+                    <input type="checkbox" id="caixa1" class="form-check-input" value="1">
+                    <label for="caixa1" class="form-check-label">1 comprimido</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input type="checkbox" id="caixa30" class="form-check-input" value="30">
+                    <label for="caixa30" class="form-check-label">30 comprimidos</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input type="checkbox" id="caixa60" class="form-check-input" value="60">
+                    <label for="caixa60" class="form-check-label">60 comprimidos</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input type="checkbox" id="caixa120" class="form-check-input" value="120">
+                    <label for="caixa120" class="form-check-label">120 comprimidos</label>
+                  </div>
+                </div>
+                <div class="form-group text-center">
+                  <button type="button" class="btn btn-primary" id="calcular" data-mdb-toggle="modal" data-mdb-target="#staticBackdrop">Calcular</button>
+                </div>
+                <div class="form-group">
+                  <div id="resultado-bg ">
+                    
+                  </div>
+                </div>
+                <p class="text-center mt-4">Projeto feito por: <strong>Lucas Gabriel/rushdzn45</strong></p>
+              </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<div   class="modal fade"
+id="staticBackdrop"
+data-mdb-backdrop="static"
+data-mdb-keyboard="false"
+tabindex="-1"
+aria-labelledby="staticBackdropLabel"
+aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <strong><p id="resultado"></p></strong>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-mdb-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+
+  <script src="script.js"></script>
+  <!-- MDB -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script>
+</body>
+
+
+
+
+</html>
