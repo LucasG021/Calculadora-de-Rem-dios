@@ -9,9 +9,6 @@ A calculadora permite ao usuário selecionar o número de comprimidos que devem 
 ## Como usar
 Para utilizar a calculadora, basta acessar o arquivo index.html em um navegador web. Em seguida, preencha os campos "Comprimidos por dia" e "Duração do tratamento em meses" com os valores desejados. Em seguida, selecione o tamanho da caixa de comprimidos que deseja comprar e clique no botão "Calcular". O resultado será exibido abaixo.
 
-## Melhorias futuras
-Algumas melhorias que podem ser feitas para a calculadora incluem:
-
 Se você tiver sugestões de melhorias ou encontrar algum bug na calculadora, sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
 Licença
